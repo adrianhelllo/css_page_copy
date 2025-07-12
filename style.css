@@ -266,8 +266,15 @@ footer h3 {
     row-gap: 1rem;
 }
 
-.social-container div h3, .social-container div h4, footer p {
+.social-container div h3, .social-container div a, footer p {
     font-family: var(--BODY-FONT);
+    color: white;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.social-container div :is(a:hover, a:focus) {
+  opacity: 0.8;
 }
 
 .inner-container {
