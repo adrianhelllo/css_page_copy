@@ -4,6 +4,9 @@
     --HERO-TEXT-COLOR: rgb(66, 52, 25);
     --BOOKS-HEADER-COLOR: rgb(180, 123, 78);
     --PAGE-BG-COLOR: rgb(255, 248, 238);
+    --PAGE-ACCENT: rgb(226, 209, 183);
+    --CARD-BG-COLOR: rgb(252, 249, 244);
+    --ABOUT-BG-COLOR: rgb(255, 239, 220);
 }
 
 html {
@@ -86,6 +89,76 @@ header ul li a:hover {
     font-weight: 400;
     margin-top: 1rem;
     font-size: 0.9rem;
+}
+
+.books {
+    text-align: center;
+    padding: 1rem;
+}
+
+.books h1 {
+    color:  var(--BOOKS-HEADER-COLOR);
+    margin: 1.5rem 0;
+}
+
+.books h2 {
+    font-size: 1rem;
+    animation: pulse 1.75s ease-in-out 0.1s infinite alternate forwards;
+    margin-bottom: 1rem;
+}
+
+.book-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1.5rem;
+    color: var(--HERO-TEXT-COLOR)
+}
+
+.book-container div {
+    width: 30%;
+    background-color: var(--CARD-BG-COLOR);
+    border: 0.5px solid var(--PAGE-ACCENT);
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.book-container div h3 {
+    font-size: 0.75rem;
+    margin: 0.5rem 0;
+}
+
+.book-container :is(div:hover, div:focus) {
+    transform: translateY(-5px);
+}
+
+.book-container div img {
+    max-width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.book-container div p {
+    font-family: var(--BODY-FONT);
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.about {
+    text-align: center;
+    color: var(--HERO-TEXT-COLOR);
+    background-color: var(--ABOUT-BG-COLOR);
+    padding: 4rem;
+}
+
+.about h1 {
+    color: var(--BOOKS-HEADER-COLOR);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-family: var(--BODY-FONT);
+    font-size: 0.7rem;
 }
 
 @keyframes pulse {
