@@ -1,4 +1,101 @@
 :root {
     --HEADER-FONT: 'Playfair Display', serif;
     --BODY-FONT: 'Source Sans Pro', sans-serif;
+    --HERO-TEXT-COLOR: rgb(66, 52, 25);
+    --BOOKS-HEADER-COLOR: rgb(180, 123, 78);
+    --PAGE-BG-COLOR: rgb(255, 248, 238);
+}
+
+html {
+    background-color:var(--PAGE-BG-COLOR);
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--HEADER-FONT);
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: burlywood;
+    background-image: url(img/hatter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+    column-gap: 2rem;
+}
+
+header h1 {
+    line-height: 150%;
+    font-size: 1.75rem;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    column-gap: 1rem;
+}
+
+header ul li a:any-link {
+    color: white;
+    text-decoration: none;
+    font-family: var(--BODY-FONT);
+    font-weight: 800;
+    font-size: 0.65rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    border: 1.5px solid white;
+}
+
+header ul li a:hover {
+    color: rgb(209, 171, 120);
+    background-color: white;
+}
+
+.hero {
+    text-align: center;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: bisque;
+    color: var(--HERO-TEXT-COLOR);
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    font-family: var(--BODY-FONT);
+    font-weight: 400;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+@keyframes pulse {
+    from {
+        color: var(--BOOKS-HEADER-COLOR);
+        transform: scale(1);
+    }
+
+    to {
+        color: red;
+        transform: scale(1.25);
+    }
 }
