@@ -65,43 +65,49 @@
           </p>
           <p><span class="bold">Virág: </span>Csak igy tovább! 😘</p>
         </div>
-        <h1>Irj nekem! ❤</h1>
-        <form action="" method="post"></form>
-        <fieldset>
-          <p>
-            <label for="name">Neved: </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              pattern="^[A-Za-z]+ [A-Za-z]+$"
-              autocomplete="off"
-              required
-            />
-          </p>
-          <p>
-            <label for="mail">E-mail cimed: </label>
-            <input
-              type="email"
-              name="mail"
-              id="mail"
-              autocomplete="off"
-              required
-            />
-          </p>
-          <p>
+        <h1 id="contact-header">Irj nekem! ❤</h1>
+        <form action="" method="post">
+          <fieldset>
+            <p>
+              <label for="name">Neved: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                pattern="^[A-Za-z]+ [A-Za-z]+$"
+                autocomplete="off"
+                required
+              />
+            </p>
+            <p>
+              <label for="mail">E-mail cimed: </label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                autocomplete="off"
+                required
+              />
+            </p>
             <label for="msg">Üzeneted: </label>
-            <br />
             <textarea
               name="msg"
               id="msg"
-              cols="30"
-              rows="10"
+              cols="50"
+              rows="7"
               placeholder="Add meg üzeneted..."
               required
             ></textarea>
-          </p>
-        </fieldset>
+          </fieldset>
+          <button
+            id="submit-btn"
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Küldés 💬
+          </button>
+        </form>
       </section>
       <footer>
         <p>&copy Egy Pancake Irata | pancake_official@gmail.com</p>
