@@ -52,11 +52,69 @@
       <section class="contact" id="ct">
         <h1>Olvasói vélemények</h1>
         <div class="reviews">
-            <p><span class="bold">Filip: </span>Nagyon tetszett a legutóbbi történeted! 😍</p>
-            <p><span class="bold">Virág: </span>Csak igy tovább! 😘</p>
+          <p>
+            <span class="bold">Filip: </span>Nagyon tetszett a legutóbbi
+            történeted! 😍
+          </p>
+          <p><span class="bold">Virág: </span>Csak igy tovább! 😘</p>
         </div>
         <h1>Irj nekem! ❤</h1>
+        <form action="" method="post"></form>
+        <fieldset>
+          <p>
+            <label for="name">Neved: </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              pattern="^[A-Za-z]+ [A-Za-z]+$"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <p>
+            <label for="mail">E-mail cimed: </label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              autocomplete="off"
+              required
+            />
+          </p>
+          <p>
+            <label for="msg">Üzeneted: </label>
+            <br />
+            <textarea
+              name="msg"
+              id="msg"
+              cols="30"
+              rows="10"
+              placeholder="Add meg üzeneted..."
+              required
+            ></textarea>
+          </p>
+        </fieldset>
       </section>
+      <footer>
+        <p>&copy Egy Pancake Irata | pancake_official@gmail.com</p>
+        <div class="social-container">
+          <div>
+            <div>
+              <h3></h3>
+              <h4></h4>
+            </div>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <div>
+              <h3></h3>
+              <h4></h4>
+            </div>
+            <img src="" alt="" />
+          </div>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
